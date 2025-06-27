@@ -1,0 +1,85 @@
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  height: 300px;
+}
+
+#imgs {
+  height: 100%;
+}
+
+#imgs:hover {
+  color: black;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.7) 35%,
+    rgba(0, 0, 0, 0.5) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: white;
+  box-sizing: border-box;
+  z-index: 2; /* 👈 important */
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-content a {
+  display: inline-block;
+  margin-top: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 Add this block at the end for dark hover overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.9); 
+}

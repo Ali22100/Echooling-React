@@ -1,0 +1,94 @@
+#cards-section {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  /* background: #0c6ed1; */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+}
+
+#toper-div{
+  margin-bottom: 100px;
+}
+
+
+#card1, #card2, #card3, #card4 {
+  width: 250px;
+  background: white;
+  /* border-radius: 8px; */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.137);
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+#img1, #img2, #img3, #img4 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#lessons4{
+    color: #002b5b ;
+}
+
+#meta1, #meta2, #meta3, #meta4 {
+  padding: 16px;
+  font-size: 14px;
+  color: #d1005d;
+  display: flex;
+  justify-content: space-between;
+}
+
+#title1, #title2, #title3, #title4 {
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #002b5b;
+  line-height: 1.5; 
+  text-align: left;
+}
+
+#footer1, #footer2, #footer3, #footer4 {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #333;
+  border-top: 1px solid #eee;
+  margin-top: 16px;
+}
+
+#price1, #price2, #price3, #price4 {
+  color: #c70039;
+  font-weight: bold;
+}
+
+#std{
+    position: relative;
+    bottom: 8px;
+}
+
+button{
+    /* border: none; */
+    padding: 20px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px 5px;
+    border: 2px solid rgb(138, 185, 255);
+    color: #002b5b;
+    /* font-family: 100px; */
+}
+
+button:hover{
+    transition: 1s;
+    border: none;
+    color: white;
+    background-color: rgb(211, 7, 7);
+}
+
+#title1, #title2, #title3, #title4:hover{
+    transition: 1s;
+    color:  rgb(211, 7, 7);
+}
